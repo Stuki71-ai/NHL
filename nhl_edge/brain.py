@@ -130,7 +130,7 @@ Hard bans in rationales (strategy secrets / pipeline shop talk — NOT fan data)
 - Never say: model, projection, lambda, edge %, fair price, EV (expected value), xG, Corsi, Fenwick, PDO, "expected goals", rate multipliers, blend, shortlist, Poisson, quant, "our system", process metrics, or how the pick was selected.
 - Never lecture staking, units, CLV, or bankroll.
 - Never put bookmaker names, prices, lines, odds, sharp/soft labels, or selection-strategy talk in the subscriber rationale.
-- Do not invent injuries or stats — every fact must be traceable to the news brief or shortlist numbers you were given.
+- Do not invent injuries, stats, or weather/atmospheric details — mention weather only if it is in the brief; every fact must be traceable to the news brief or shortlist numbers you were given.
 
 Output ONLY a JSON array (no markdown fences). Each object:
   date (YYYY-MM-DD ET), sport "icehockey_nhl", league "NHL", home, away, match "Away @ Home",
