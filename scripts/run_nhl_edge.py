@@ -24,7 +24,7 @@ ET = ZoneInfo("America/New_York")
 
 # Stages that mean "pipeline completed as designed" (exit 0)
 _OK_STAGES = frozenset(
-    {"picks", "no-picks", "no-candidates", "all-dupes"}
+    {"picks", "no-picks", "no-candidates", "all-dupes", "already-shipped-today"}
 )
 
 
