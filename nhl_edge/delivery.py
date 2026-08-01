@@ -169,12 +169,17 @@ def post_grader(picks: list[dict[str, Any]]) -> tuple[bool, list[str]]:
     return True, [str(k) for k in keys]
 
 
+# ntfy replaces a truly empty body with the literal text "triggered" — a zero-width
+# space is the only payload that renders as a blank body (operator order: empty body).
+_NTFY_EMPTY_BODY = "​".encode("utf-8")
+
+
 def ntfy_no_picks() -> None:
     try:
         requests.post(
             "https://ntfy.sh/Stuki71-EDGE",
             headers={"Title": "NHL EDGE @ No picks for today"},
-            data=b"",
+            data=_NTFY_EMPTY_BODY,
             timeout=15,
         )
     except Exception:
@@ -188,7 +193,7 @@ def ntfy_no_new_picks(slot_label: str) -> None:
         requests.post(
             "https://ntfy.sh/Stuki71-EDGE",
             headers={"Title": f"NHL - No new picks @ {slot_label}", "Priority": "default"},
-            data=b"",
+            data=_NTFY_EMPTY_BODY,
             timeout=15,
         )
     except Exception:
