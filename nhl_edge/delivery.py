@@ -181,6 +181,20 @@ def ntfy_no_picks() -> None:
         pass
 
 
+def ntfy_no_new_picks(slot_label: str) -> None:
+    """Operator info: a later same-day run produced no NEW picks (all already shipped).
+    Normal priority, empty body — title carries the run's slot time (operator order 2026-08-01)."""
+    try:
+        requests.post(
+            "https://ntfy.sh/Stuki71-EDGE",
+            headers={"Title": f"No new picks @ {slot_label}", "Priority": "default"},
+            data=b"",
+            timeout=15,
+        )
+    except Exception:
+        pass
+
+
 def ntfy_critical(title: str, msg: str) -> None:
     # EDGE family: ONLY critical (urgent) or no-picks — both on Stuki71-EDGE.
     try:

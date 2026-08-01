@@ -114,6 +114,7 @@ def run(
         print(f"[1] Fetch odds slate… date_et={date_et}")
         t0 = time.perf_counter()
         is_today = date_et == datetime.now(ET).strftime("%Y-%m-%d")
+        slot_label = datetime.now(ET).strftime("%H:%M") + " ET"  # this run's fire time (title of no-new-picks ntfy)
         if is_today:
             events, remaining = slate.fetch_odds(date_et=None)
             events = slate.filter_slate(events)
@@ -248,6 +249,7 @@ def run(
                 f"[dedupe] already shipped {len(already)} pick(s) for {date_et} — "
                 "silence (one customer proposal per ET day; no 2nd round)"
             )
+            delivery.ntfy_no_new_picks(slot_label)
             _write_run(date_et, report)
             return report
 
@@ -292,6 +294,8 @@ def run(
                 report["stage"] = "all-dupes"
                 report["ok"] = True  # healthy multi-cron / cross-product re-fire
                 print("[dedupe] all picks already sent (local or family sheet) — silence")
+                if not dry_run:
+                    delivery.ntfy_no_new_picks(slot_label)
             else:
                 report["stage"] = "no-picks"
                 if not dry_run:
@@ -339,6 +343,7 @@ def run(
                 report["picks_n"] = 0
                 report["delivery"] = {"grader": True, "email": False, "whop": False}
                 print("[dedupe] grader accepted 0 keys (already on sheet / US EDGE) — silence")
+                delivery.ntfy_no_new_picks(slot_label)
                 _write_run(date_et, report)
                 return report
 
