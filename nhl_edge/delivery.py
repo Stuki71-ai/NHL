@@ -187,7 +187,7 @@ def ntfy_no_new_picks(slot_label: str) -> None:
     try:
         requests.post(
             "https://ntfy.sh/Stuki71-EDGE",
-            headers={"Title": f"No new picks @ {slot_label}", "Priority": "default"},
+            headers={"Title": f"NHL - No new picks @ {slot_label}", "Priority": "default"},
             data=b"",
             timeout=15,
         )
