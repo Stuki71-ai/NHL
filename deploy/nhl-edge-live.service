@@ -1,0 +1,13 @@
+[Unit]
+Description=NHL EDGE live slate (same product slots as US EDGE)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/root/nhl-edge
+Environment=TZ=America/New_York
+Environment=PYTHONPATH=/root/nhl-edge
+ExecStart=/root/nhl-edge/venv/bin/python /root/nhl-edge/scripts/run_nhl_edge.py --live
+StandardOutput=append:/root/nhl-edge/logs/run.log
+StandardError=append:/root/nhl-edge/logs/run.log

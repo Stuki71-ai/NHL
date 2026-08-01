@@ -1,0 +1,16 @@
+[Unit]
+Description=NHL EDGE schedule (America/New_York)
+
+[Timer]
+# NHL-native slots (ET only — America/New_York):
+# Daily 18:05 ET — after afternoon goalie confirmations, before 19:00 pucks.
+# Sat+Sun 12:00 ET — weekend matinee slates (12:30+ ET pucks).
+# One customer proposal per ET day (pipeline gate) — later slots ship only if earlier ones didn't.
+OnCalendar=*-*-* 18:05:00 America/New_York
+OnCalendar=Sat,Sun *-*-* 12:00:00 America/New_York
+AccuracySec=1s
+Persistent=false
+Unit=nhl-edge-live.service
+
+[Install]
+WantedBy=timers.target
