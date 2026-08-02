@@ -54,6 +54,7 @@ SECRET_KEYS = [
     "OPENAI_API_KEY",
     "XAI_API_KEY",  # optional residual; brain no longer requires Grok
     "PERPLEXITY_API_KEY",
+    "SERPER_KEY",  # news layer 2 (Serper.dev per-game fallback — NIGHT pattern)
     "WHOP_APP_KEY",
     "WHOP_API_KEY",
     "WHOP_OWNER_ID",
