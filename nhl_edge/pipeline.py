@@ -186,7 +186,7 @@ def run(
             _write_run(date_et, report)
             return report
 
-        safe_print("[6] Team news (grok-4.5 web+X primary → sonar-pro fallback)…")
+        safe_print("[6] Team news (sonar-pro per game + Serper fallback + grok-4.5 X-INTEL)…")
         t0 = time.perf_counter()
         news_brief = news.team_news(
             [
@@ -200,7 +200,7 @@ def run(
             ]
         )
         timing["sonar_sec"] = round(time.perf_counter() - t0, 3)
-        report["news"] = news_brief[:3000]
+        report["news"] = news_brief[:12000]
         safe_print(f"    sonar_sec={timing['sonar_sec']}")
         safe_print(news_brief[:800])
 
