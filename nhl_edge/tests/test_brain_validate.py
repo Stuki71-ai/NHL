@@ -15,8 +15,8 @@ def test_composer_rules_match_us_edge_bar():
     # Paid-sub priority: hit rate > long-horizon EV
     assert "win probability" in SYS
     assert "long-term" in SYS or "long-horizon" in SYS
-    # EDGE family rationale length (NIGHT rules, 80–100 word band)
-    assert "80–100" in SYS or "80-100" in SYS
+    # EDGE family rationale length (55–75 word band — tightened 2026-08-02)
+    assert "55–75" in SYS or "55-75" in SYS
     assert "HARD" in SYS
     assert "STARTS ON SUBSTANCE" in SYS or "START ON SUBSTANCE" in SYS
     # strategy-leak bans stay in place; glanceable fan data is allowed

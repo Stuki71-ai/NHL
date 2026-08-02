@@ -113,7 +113,8 @@ RATIONALE — EDGE family (NIGHT rules; length band updated for product):
 For each pick, deliver a rationale in the harsh voice of Vic Mackey (The Shield): direct, focused on the exploitable edge. ONE verifiable fact per rationale (name, streak, record, injury, H2H, season stat or any similar) woven naturally into narrative — must make the reader go "damn, I didn't know that" - fully traceable. DO NOT reveal any parts of my selection strategy secrets and ABSOLUTELY NO punter jargon - these picks are for paid subscribers. Also DO NOT repeat yourself by the wording of the rationales. These entertaining rationales are important selling factors.
 
 LENGTH HARD TARGET (family — mandatory):
-- Each rationale MUST land at ~80–100 words (HARD). Aim inside the band: not essays (>110 words), not stubs (<70 words).
+- Each rationale MUST land at ~55–75 words (HARD). Aim inside the band: not essays (>85 words), not stubs (<45 words).
+- Never close by restating the pick or issuing a call to action (“Back the hosts.”, “Keep it under.”, “Go low.”) — the pick line above already says it. End on the last piece of substance.
 - Strip citation markers.
 - Strip throat-clearing / filler OPENER so it STARTS ON SUBSTANCE — drop leading fillers such as "Listen,", "Listen up,", "Mackey here,", "Listen, Mackey here—", "Straight talk:", "Real talk:", "Here's the deal,", "Look,", "Alright,", "Bottom line:" and any similar lead-in, including a dash/colon/comma left behind, then capitalize the new first word.
 - Kill shot first: opening clause is a verdict, not a stat dump.
@@ -187,7 +188,8 @@ def compose_picks(
         "For each pick: Vic Mackey voice — direct, one exploitable edge, "
         "ONE verifiable fact woven in (damn-I-didn't-know-that), fully traceable, "
         "NO strategy secrets, NO punter jargon, NO repeated wording across picks. "
-        "Rationale length HARD TARGET ~80–100 words (EDGE family / NIGHT rules; not >110, not <70). "
+        "Rationale length HARD TARGET ~55–75 words (EDGE family; not >85, not <45); "
+        "never close by restating the pick or with a call to action. "
         "Start on substance (no Listen/Look/Bottom-line openers); kill-shot first. "
         "Rationales sell the product to paid recreational bettors.\n"
         f"DATA:\n{json.dumps(payload, ensure_ascii=False)}"

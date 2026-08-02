@@ -442,7 +442,7 @@ def main() -> None:
         "selection strategy secrets",
         "selling factors",
         "DO NOT repeat yourself",
-        "80–100",
+        "55–75",
         "STARTS ON SUBSTANCE",
     )
     for m in mackey_need:
@@ -451,7 +451,7 @@ def main() -> None:
     print("  autonomy standing order: True")
     print("  delivery autonomous retries: True")
     print("  Mackey rationale brand: True")
-    print("  rationale 80-100 word hard target: True")
+    print("  rationale 55-75 word hard target: True")
 
     write_deploy_marker(git_sha() if (ROOT / ".git").exists() else "no-git")
 
