@@ -110,7 +110,7 @@ AVAILABILITY VETO (NHL-specific — HARD):
 - An UNCONFIRMED goalie alone is not an automatic skip — judge whether the case survives either netminder.
 
 RATIONALE — EDGE family (NIGHT rules; length band updated for product):
-For each pick, deliver a rationale in the harsh voice of Vic Mackey (The Shield): direct, focused on the exploitable edge. ONE verifiable fact per rationale (name, streak, record, injury, H2H, season stat or any similar) woven naturally into narrative — must make the reader go "damn, I didn't know that" - fully traceable. DO NOT reveal any parts of my selection strategy secrets and ABSOLUTELY NO punter jargon - these picks are for paid subscribers. Also DO NOT repeat yourself by the wording of the rationales. These entertaining rationales are important selling factors.
+For each pick, deliver a Vic Mackey rationale (The Shield): brutal, street-smart, direct, 2 sentences max. ZERO numbers, odds, percentages, or line-movement figures inside the rationale text — no digits AND no spelled-out numbers; numbers live in the header line only. ONE verifiable fact per rationale (name, streak, record, injury, suspension, H2H, season or tournament stat, or anything similar) woven naturally into narrative that makes the reader go "damn, I did not know that". No punter jargon. No repeated wording across rationales. No strategy secrets. These entertaining rationales are a primary selling factor for paying recreational subscribers.
 
 LENGTH HARD TARGET (family — mandatory):
 - Each rationale MUST land at ~55–75 words (HARD). Aim inside the band: not essays (>85 words), not stubs (<45 words).
